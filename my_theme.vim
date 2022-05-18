@@ -1,14 +1,7 @@
 " Vim color file
-" Name:       256_noir.vim
-" Maintainer: Andreas van Cranenburgh <andreas@unstable.nl>
-" Homepage:   https://github.com/andreasvc/vim-256noir/
-
 " Basically: dark background, numerals & errors red,
-" rest different shades of gray.
+" rest different shades of pink, yellow, green and white.
 "
-" colors 232--250 are shades of gray, from dark to light;
-" 16=black, 255=white, 196=red, 88=darkred.
-
 highlight clear
 if version > 580
     " no guarantees for version 5.8 and below, but this makes it stop
@@ -17,7 +10,7 @@ if version > 580
         syntax reset
     endif
 endif
-let g:colors_name = "256_noir"
+let g:colors_name = "mytheme"
 set t_Co=256
 if has("gui_running") || &t_Co == 256
     hi Normal cterm=BOLD ctermfg=250 ctermbg=16 gui=NONE guifg=#fefaff guibg=#000000
