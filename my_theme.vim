@@ -24,7 +24,7 @@ if has("gui_running") || &t_Co == 256
     hi Keyword cterm=BOLD ctermfg=255 ctermbg=16 gui=BOLD guifg=#fafad7 guibg=#000000
     hi Constant cterm=NONE ctermfg=252 ctermbg=16 gui=NONE guifg=#d7fbfc guibg=#000000
     hi String cterm=NONE ctermfg=245 ctermbg=16 gui=NONE guifg=#f5d9fa guibg=#000000
-    hi Comment cterm=NONE ctermfg=1 ctermbg=16 gui=NONE guifg=#ffffff guibg=#000000
+    hi Comment cterm=NONE ctermfg=1 ctermbg=16 gui=NONE guifg=#919191 guibg=#000000
     hi Number cterm=NONE ctermfg=196 ctermbg=16 gui=NONE guifg=#ffffff guibg=#000000
     hi Error cterm=NONE ctermfg=255 ctermbg=88 gui=NONE guifg=#d7fbfc guibg=#870000
     hi ErrorMsg cterm=NONE ctermfg=255 ctermbg=124 gui=NONE guifg=#d7fbfc guibg=#af0000
@@ -103,7 +103,7 @@ highlight! link Directory Keyword
 highlight! link PreCondit Keyword
 highlight! link PreProc Keyword
 highlight! link Repeat Keyword
-highlight! link Special Nomral
+highlight! link Special Normal
 highlight! link SpecialChar Normal
 highlight! link StorageClass Keyword
 highlight! link SpecialComment String
@@ -115,10 +115,10 @@ highlight! link Folded Number
 highlight! link WarningMsg Number
 highlight! link iCursor SpecialKey
 highlight! link SpellLocal SpellCap
-highlight! link LineNr Comment
-highlight! link NonText Comment
-highlight! link DiffDelete Comment
-highlight! link diffRemoved Comment
+highlight! link LineNr Number
+highlight! link NonText SpecialKey
+highlight! link DiffDelete Keyword
+highlight! link diffRemoved Keyword
 highlight! link PmenuSbar Visual
 highlight! link PmenuSel Visual
 highlight! link VisualNOS Visual
