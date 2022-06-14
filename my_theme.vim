@@ -1,7 +1,14 @@
 " Vim color file
+" Name:       mytheme
+" Maintainer: Andreas van Cranenburgh <andreas@unstable.nl>
+" Homepage:   https://github.com/andreasvc/vim-256noir/
+
 " Basically: dark background, numerals & errors red,
-" rest different shades of pink, yellow, green and white.
+" rest different shades of gray.
 "
+" colors 232--250 are shades of gray, from dark to light;
+" 16=black, 255=white, 196=red, 88=darkred.
+
 highlight clear
 if version > 580
     " no guarantees for version 5.8 and below, but this makes it stop
@@ -14,30 +21,30 @@ let g:colors_name = "mytheme"
 set t_Co=256
 if has("gui_running") || &t_Co == 256
     hi Normal cterm=BOLD ctermfg=250 ctermbg=16 gui=NONE guifg=#fefaff guibg=#000000
-    hi Keyword cterm=BOLD ctermfg=255 ctermbg=16 gui=BOLD guifg=#fafae8 guibg=#000000
-    hi Constant cterm=NONE ctermfg=252 ctermbg=16 gui=NONE guifg=#d0d0d0 guibg=#000000
+    hi Keyword cterm=BOLD ctermfg=255 ctermbg=16 gui=BOLD guifg=#fafad7 guibg=#000000
+    hi Constant cterm=NONE ctermfg=252 ctermbg=16 gui=NONE guifg=#d7fbfc guibg=#000000
     hi String cterm=NONE ctermfg=245 ctermbg=16 gui=NONE guifg=#f5d9fa guibg=#000000
     hi Comment cterm=NONE ctermfg=1 ctermbg=16 gui=NONE guifg=#ffffff guibg=#000000
     hi Number cterm=NONE ctermfg=196 ctermbg=16 gui=NONE guifg=#ffffff guibg=#000000
-    hi Error cterm=NONE ctermfg=255 ctermbg=88 gui=NONE guifg=#eeeeee guibg=#870000
-    hi ErrorMsg cterm=NONE ctermfg=255 ctermbg=124 gui=NONE guifg=#eeeeee guibg=#af0000
-    hi Search cterm=NONE ctermfg=245 ctermbg=236 gui=NONE guifg=#8a8a8a guibg=#303030
+    hi Error cterm=NONE ctermfg=255 ctermbg=88 gui=NONE guifg=#d7fbfc guibg=#870000
+    hi ErrorMsg cterm=NONE ctermfg=255 ctermbg=124 gui=NONE guifg=#d7fbfc guibg=#af0000
+    hi Search cterm=NONE ctermfg=245 ctermbg=236 gui=NONE guifg=#d7fbfc guibg=#303030
     hi IncSearch cterm=reverse ctermfg=255 ctermbg=245 gui=reverse guifg=#eeeeee guibg=#8a8a8a
-    hi DiffChange cterm=NONE ctermfg=160 ctermbg=255 gui=NONE guifg=#d70000 guibg=#eeeeee
+    hi DiffChange cterm=NONE ctermfg=160 ctermbg=255 gui=NONE guifg=#a9adfc guibg=#eeeeee
     hi DiffText cterm=NONE ctermfg=250 ctermbg=196 gui=UNDERLINE guifg=#e8fcde guibg=#000000
     hi SignColumn cterm=NONE ctermfg=124 ctermbg=240 gui=NONE guifg=#af0000 guibg=#585858
     hi SpellBad cterm=undercurl ctermfg=255 ctermbg=88 gui=undercurl guifg=#eeeeee guibg=#870000
-    hi SpellCap cterm=NONE ctermfg=255 ctermbg=124 gui=NONE guifg=#eeeeee guibg=#af0000
-    hi SpellRare cterm=NONE ctermfg=124 ctermbg=16 gui=NONE guifg=#af0000 guibg=#000000
-    hi WildMenu cterm=NONE ctermfg=240 ctermbg=255 gui=NONE guifg=#585858 guibg=#eeeeee
-    hi Pmenu cterm=NONE ctermfg=255 ctermbg=240 gui=NONE guifg=#eeeeee guibg=#585858
-    hi PmenuThumb cterm=NONE ctermfg=232 ctermbg=240 gui=NONE guifg=#080808 guibg=#585858
-    hi SpecialKey cterm=NONE ctermfg=16 ctermbg=255 gui=NONE guifg=#e8fcde guibg=#000000
+    hi SpellCap cterm=NONE ctermfg=255 ctermbg=124 gui=NONE guifg=#d7fbfc guibg=#af0000
+    hi SpellRare cterm=NONE ctermfg=124 ctermbg=16 gui=NONE guifg=#cfccff guibg=#000000
+    hi WildMenu cterm=NONE ctermfg=240 ctermbg=255 gui=NONE guifg=#d7fbfc guibg=#eeeeee
+    hi Pmenu cterm=NONE ctermfg=255 ctermbg=240 gui=NONE guifg=#d7fbfc guibg=#585858
+    hi PmenuThumb cterm=NONE ctermfg=232 ctermbg=240 gui=NONE guifg=#d7fbfc guibg=#585858
+    hi SpecialKey cterm=NONE ctermfg=16 ctermbg=255 gui=NONE guifg=#d7fcc5 guibg=#000000
     hi MatchParen cterm=NONE ctermfg=16 ctermbg=240 gui=NONE guifg=#000000 guibg=#585858
     hi CursorLine cterm=NONE ctermfg=NONE ctermbg=233 gui=NONE guifg=NONE guibg=#121212
     hi StatusLine cterm=reverse ctermfg=245 ctermbg=16 gui=bold,reverse guifg=#ffffff guibg=#000000
     hi StatusLineNC cterm=reverse ctermfg=236 ctermbg=16 gui=reverse guifg=#ffffff guibg=#000000
-    hi Visual cterm=reverse ctermfg=250 ctermbg=16 gui=reverse guifg=#bcbcbc guibg=#000000
+    hi Visual cterm=reverse ctermfg=250 ctermbg=16 gui=reverse guifg=#d7fbfc guibg=#000000
     hi TermCursor cterm=reverse ctermfg=NONE ctermbg=NONE gui=reverse guifg=NONE guibg=NONE
 else
     hi Normal cterm=NONE ctermfg=Gray ctermbg=Black
