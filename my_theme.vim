@@ -24,7 +24,7 @@ if has("gui_running") || &t_Co == 256
     hi Keyword cterm=BOLD ctermfg=255 ctermbg=16 gui=BOLD guifg=#fafad7 guibg=#000000
     hi Constant cterm=NONE ctermfg=252 ctermbg=16 gui=NONE guifg=#d7fbfc guibg=#000000
     hi String cterm=NONE ctermfg=245 ctermbg=16 gui=NONE guifg=#f5d9fa guibg=#000000
-    hi Comment cterm=NONE ctermfg=1 ctermbg=16 gui=NONE guifg=#919191 guibg=#000000
+    hi Comment cterm=NONE ctermfg=1 ctermbg=16 gui=NONE guifg=#d1cdcd guibg=#000000
     hi Number cterm=NONE ctermfg=196 ctermbg=16 gui=NONE guifg=#ffffff guibg=#000000
     hi Error cterm=NONE ctermfg=255 ctermbg=88 gui=NONE guifg=#d7fbfc guibg=#870000
     hi ErrorMsg cterm=NONE ctermfg=255 ctermbg=124 gui=NONE guifg=#d7fbfc guibg=#af0000
